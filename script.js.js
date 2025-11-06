@@ -5,10 +5,12 @@ function loginUser(event) {
   let name = document.getElementById("username").value;
   let phone = document.getElementById("phone").value;
 
-  if (name.trim() === "" || phone.trim() === "") {
+  if (name.trim() === "" || phone.trim() === "") 
+    {
     alert("Please enter all details!");
     return;
   }
+  
 
   // Store user in localStorage
   localStorage.setItem("agriUser", JSON.stringify({ name, phone }));

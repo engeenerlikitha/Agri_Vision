@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plasma Agri Lab Reports - AgriVision</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #f5f5f5;
+      background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    header {
+      padding: 25px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #a8ff78;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      animation: fadeInDown 1s ease;
+    }
+
+    .content {
+      max-width: 950px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1.3s ease;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ffd700, #ff8c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #e0faff;
+      margin-bottom: 18px;
+    }
+
+    .report-box {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .report-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    }
+
+    .report-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ffd700;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: linear-gradient(90deg, #4caf50, #2ecc71);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(90deg, #2ecc71, #27ae60);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px 15px 0 0;
+      font-size: 14px;
+      color: #a8ff78;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>📋 Plasma Agri Lab - Research Reports</header>
+
+  <div class="content">
+    <h2>Documented Research Findings</h2>
+    <p>
+      The Plasma Agri Lab at <strong>GSSSIETW, Mysuru</strong> continuously explores innovative plasma applications for agriculture.
+      Each report captures research insights, observations, and data-driven outcomes that contribute to eco-friendly, high-yield farming practices.
+    </p>
+
+    <div class="report-box">
+      <div class="report-title">1️⃣ Effect of Cold Plasma on Seed Germination and Growth</div>
+      <p>Studies showed improved germination rate (up to 25%) and stronger root growth after plasma exposure for optimized durations.</p>
+      <a class="download-btn" href="plasma_seed_report.docx" download>⬇ Download Report</a>
+    </div>
+
+    <div class="report-box">
+      <div class="report-title">2️⃣ Biochemical Response of Plasma-Treated Seeds</div>
+      <p>Enhanced chlorophyll, protein levels, and enzyme activity confirmed plasma’s potential in promoting healthier plant physiology.</p>
+      <a class="download-btn" href="biochemical_study.docx" download>⬇ Download Report</a>
+    </div>
+
+    <div class="report-box">
+      <div class="report-title">3️⃣ Optimization of Plasma Parameters</div>
+      <p>Experiments evaluated gas composition, flow rate, and exposure duration for ideal plasma effects in agriculture applications.</p>
+      <a class="download-btn" href="parameter_optimization.docx" download>⬇ Download Report</a>
+    </div>
+
+    <div class="report-box">
+      <div class="report-title">4️⃣ Comparative Analysis of Plasma vs Traditional Treatments</div>
+      <p>Results revealed plasma-treated seeds outperformed chemical-treated seeds in germination and disease resistance.</p>
+      <a class="download-btn" href="comparison_study.docx" download>⬇ Download Report</a>
+    </div>
+
+    <div class="report-box">
+      <div class="report-title">5️⃣ Long-Term Impact and Sustainability Evaluation</div>
+      <p>Findings indicated significant potential for long-term adoption of plasma-based seed treatment in sustainable agriculture.</p>
+      <a class="download-btn" href="sustainability_report.docx" download>⬇ Download Report</a>
+    </div>
+  </div>
+
+  <footer>© 2025 AgriVision | Plasma Agri Lab | Designed by GSSSIETW</footer>
+</body>
+</html>

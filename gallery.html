@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - AgriVision</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #dcdde2, #9da6a9, #b6c3c8);
+      color: rgb(236, 237, 243);
+      text-align: center;
+    }
+
+    header {
+      background: #cac7d3;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #0fbf0f;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    section {
+      margin: 40px auto;
+      max-width: 1100px;
+      background: #c7c8d1;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      background: linear-gradient(90deg, #3700ff, #001aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px 15px 0 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>🌱 AgriVision Gallery</header>
+
+  <!-- Inauguration of Plasma -->
+  <section>
+    <h2>Inauguration of Plasma</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="in1.jpg" alt="Inauguration"></div>
+      <div class="gallery-item"><img src="in2.jpg" alt="Inauguration"></div>
+      <div class="gallery-item"><img src="in3.jpg" alt="Inauguration"></div>
+      <div class="gallery-item"><img src="in4.jpg" alt="Inauguration"></div>
+    </div>
+  </section>
+
+  <!-- Expert Visit -->
+  <section>
+    <h2>Expert Visit</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="exp1.jpg" alt="Expert Visit"></div>
+      <div class="gallery-item"><img src="exp3.jpg" alt="Expert Visit"></div>
+      <div class="gallery-item"><img src="exp2.jpg" alt="Expert Visit"></div>
+      <div class="gallery-item"><img src="exp4.jpg" alt="Expert Visit"></div>
+    </div>
+  </section>
+
+  <!-- Biochemical Analysis -->
+  <section>
+    <h2>Biochemical Analysis</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="p1 ch.jpg" alt="Bio Chemical"></div>
+      <div class="gallery-item"><img src="p2 ch.jpg" alt="Bio Chemical"></div>
+      <div class="gallery-item"><img src="p3 ch.jpg" alt="Bio Chemical"></div>
+      <div class="gallery-item"><img src="p4 ch.jpg" alt="Bio Chemical"></div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section>
+    <h2>Achievements</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="acv1.jpg" alt="Achievements"></div>
+      <div class="gallery-item"><img src="acv2.jpg" alt="Achievements"></div>
+      <div class="gallery-item"><img src="acv3.jpg" alt="Achievements"></div>
+      <div class="gallery-item"><img src="acv4.jpg" alt="Achievements"></div>
+    </div>
+  </section>
+
+  <!-- Contribution -->
+  <section>
+    <h2>Contribution</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="c1.jpg" alt="Contribution"></div>
+      <div class="gallery-item"><img src="c2.jpg" alt="Contribution"></div>
+      <div class="gallery-item"><img src="c3.jpg" alt="Contribution"></div>
+      <div class="gallery-item"><img src="c4.jpg" alt="Contribution"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AgriVision | Gallery Page | Designed by GSSSIETW</p>
+  </footer>
+</body>
+</html>

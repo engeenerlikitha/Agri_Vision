@@ -337,6 +337,29 @@ input:focus {
   font-size: 14px;
   
 }
+.download-section {
+  margin-top: 25px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.07);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.6);
+}
+
 
 
 

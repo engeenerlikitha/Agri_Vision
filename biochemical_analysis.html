@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biochemical Analysis Report - AgriVision</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #f5f5f5;
+      text-align: center;
+      background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Overlay for dim effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      background: linear-gradient(90deg, #ffd700, #ff8c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #e0faff;
+      margin-bottom: 35px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 15px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      text-decoration: none;
+      border-radius: 35px;
+      box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+      transition: all 0.4s ease;
+      animation: glow 2s infinite alternate, pulse 2s ease-in-out 1;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(0, 114, 255, 0.9);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      color: #a8ff78;
+    }
+
+    /* Animations */
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #00c6ff; }
+      to { box-shadow: 0 0 20px #0072ff; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧪 Biochemical Analysis Report</h1>
+  <p>Click below to download the detailed report on Plasma Biochemical Analysis.</p>
+
+  <a href="biochemical_analysis.docx" download class="download-btn">
+    📄 Download Biochemical Analysis Report
+  </a>
+
+  <footer>© 2025 AgriVision | Designed by GSSSIETW</footer>
+
+</body>
+</html>

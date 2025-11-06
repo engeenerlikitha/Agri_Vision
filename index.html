@@ -6,17 +6,16 @@
   <title>AgriVision - Home</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Background */
+    /* Your existing CSS remains the same */
     body.homepage {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-      background: url("https://i.ytimg.com/vi/ui2C0wWiqBc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRwf8oBAlAiy3NIWfj0ekhFT9zqw") no-repeat center center fixed;
+      background: url("https://i.ytimg.com/vi/ui2C0wWiqBc/hq720.jpg") no-repeat center center fixed;
       background-size: cover;
       text-align: center;
     }
-
     body.homepage::before {
       content: "";
       position: fixed;
@@ -27,10 +26,9 @@
       background: rgba(0, 0, 0, 0.45);
       z-index: -1;
     }
-
-    /* Header */
     .header {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 20px 30px;
@@ -38,28 +36,6 @@
       border-radius: 0 0 15px 15px;
       position: relative;
     }
-
-    .navbar {
-      position: absolute;
-      right: 30px;
-      top: 20px;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    .navbar .btn {
-      background: #4CAF50;
-      padding: 6px 12px;
-      border-radius: 8px;
-      color: white;
-    }
-
-    /* Professional Logo and Title */
     .logo {
       font-size: 2.2rem;
       font-weight: 700;
@@ -67,30 +43,14 @@
       background: linear-gradient(90deg, #a8ff78, #78ffd6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      position: relative;
-      display: inline-block;
     }
-
-    .logo::after {
-      content: '';
-      position: absolute;
-      left: -5%;
-      top: -5%;
-      width: 110%;
-      height: 110%;
-      background: rgba(255, 255, 255, 0.15);
-      filter: blur(10px);
-      border-radius: 5px;
-      z-index: -1;
-      animation: glowPulse 3s infinite ease-in-out;
+    .tagline {
+      font-size: 1rem;
+      margin-top: 8px;
+      color: #d4ffd9;
+      font-weight: 500;
+      font-style: italic;
     }
-
-    @keyframes glowPulse {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 0.6; }
-    }
-
-    /* Welcome Section */
     .section-box {
       text-align: center;
       margin: 30px auto;
@@ -100,7 +60,6 @@
       max-width: 600px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
-
     .section-box h2 {
       font-size: 1.8rem;
       margin-bottom: 10px;
@@ -108,14 +67,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    .section-box h3 {
-      font-weight: 400;
-      margin-bottom: 10px;
-      color: #f0f0f0;
-    }
-
-    /* Menu Items */
     .menu-item {
       background: rgba(255, 255, 255, 0.15);
       padding: 18px;
@@ -125,14 +76,11 @@
       max-width: 400px;
       transition: background 0.3s ease, transform 0.3s ease;
     }
-
     .menu-item:hover {
       background: rgba(255, 255, 255, 0.35);
       cursor: pointer;
       transform: translateY(-3px);
     }
-
-    /* Footer */
     footer {
       text-align: center;
       margin-top: 50px;
@@ -143,71 +91,52 @@
     }
   </style>
 </head>
+
 <body class="homepage">
 
-  <!-- Header -->
   <header class="header">
     <div class="logo">🌱 AgriVision</div>
-    <nav class="navbar">
-      <a href="index.html" class="active">Home</a>
-      <a href="category.html">Crops</a>
-      <a href="profile.html">Profile</a>
-      <a href="login.html" class="btn">Login</a>
-    </nav>
+    <div class="tagline">Empowering seeds with the power of cold plasma — A GSSSIETW Initiative</div>
   </header>
 
-  <!-- Welcome Section -->
   <section class="section-box">
     <h2>Welcome to GSSS AgriVision</h2>
     <h3>Mysuru, India</h3>
     <p>Weather: <span id="weather">29°C ☀</span></p>
   </section>
 
-  <!-- About Us -->
+  <section class="section-box">
+    <h2>Our Vision</h2>
+    <p>To revolutionize agriculture through intelligent technology that empowers farmers with real-time insights, sustainable practices, and smarter crop management for a greener future.</p>
+    <br>
+    <h2>Our Mission</h2>
+    <p>To bridge the gap between technology and agriculture by providing farmers with data-driven tools to monitor crop health, predict diseases, and enhance productivity using IoT and AI innovations.</p>
+  </section>
+
+  <!-- 🌿 Gallery -->
+  <section class="section-box">
+    <a href="gallery.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item">🖼 Gallery</div>
+    </a>
+  </section>
+
+  <!-- ℹ About Us -->
   <section class="section-box">
     <a href="aboutus.html" style="text-decoration: none; color: inherit;">
       <div class="menu-item">ℹ About Us</div>
     </a>
   </section>
 
-  <!-- Guide -->
+  <!-- ⚡ Plasma Agri Lab -->
   <section class="section-box">
-    <a href="guide.html" style="text-decoration: none; color: inherit;">
-      <div class="menu-item">📘 Guide</div>
+    <a href="plasma_lab.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item">⚡ Plasma Agri Lab</div>
     </a>
   </section>
 
-  <!-- Your Crops -->
-  <section class="section-box">
-    <a href="crops.html" style="text-decoration: none; color: inherit;">
-      <div class="menu-item">🌾 Treated Crops</div>
-    </a>
-  </section>
-
-  <!-- Camera Option -->
-  <section class="section-box">
-    <h3>📸 Take a Picture of Your Crop</h3>
-    <input type="file" accept="image/*" id="upload" onchange="previewImage(event)">
-    <br><br>
-    <img id="preview" src="" alt="Selected Image" style="max-width:100%; border-radius:12px; display:none;">
-  </section>
-
-  <!-- Footer -->
   <footer>
     <p>© 2025 AgriVision | Made with ❤ for Farmers</p>
   </footer>
-
-  <script>
-    function previewImage(event) {
-      const reader = new FileReader();
-      reader.onload = function() {
-        const output = document.getElementById('preview');
-        output.src = reader.result;
-        output.style.display = 'block';
-      }
-      reader.readAsDataURL(event.target.files[0]);
-    }
-  </script>
 
 </body>
 </html>
